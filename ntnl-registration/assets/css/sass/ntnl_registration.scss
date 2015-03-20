@@ -1,0 +1,84 @@
+/**
+ * NTNL Registration
+ * http://wordpress.org/extend/plugins
+ *
+ * Copyright (c) 2015 Tanner Moushey
+ * Licensed under the GPLv2+ license.
+ */
+
+#registration {
+	overflow: hidden;
+
+	.hidden {
+		display: none;
+	}
+
+	.reg-sidebar {
+		float: left;
+		width: 25%;
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.reg-content {
+		float: left;
+		width: 75%;
+	}
+
+	.restricted {
+		display: none;
+	}
+
+	input[type=checkbox] {
+		float: left;
+		width: auto;
+		margin-top: 0.5em;
+	}
+
+	.description {
+		margin-left: 2em;
+	}
+}
+
+.ntnlr-view {
+	table {
+		font-size: 12px;
+	}
+
+	td {
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+
+	.attendee-link {
+		display: block;
+		text-decoration: none;
+		border: none;
+	}
+
+	.table-sort {
+		thead {
+			.sort {
+				cursor: pointer;
+				&:after {
+					font-family: Dashicons;
+					padding-left: .5em;
+					content: "\f156";
+				}
+
+				&.sorting-asc, &.sorting-desc {
+					border-bottom: 3px solid black;
+				}
+
+				&.sorting-desc:after {
+					content: "\f140";
+				}
+
+				&.sorting-asc:after {
+					content: "\f142";
+				}
+			}
+		}
+	}
+}

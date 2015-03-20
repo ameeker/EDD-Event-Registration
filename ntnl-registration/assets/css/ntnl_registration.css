@@ -1,0 +1,49 @@
+/**
+ * NTNL Registration
+ * http://wordpress.org/extend/plugins
+ *
+ * Copyright (c) 2015 Tanner Moushey
+ * Licensed under the GPLv2+ license.
+ */
+#registration {
+  overflow: hidden; }
+  #registration .hidden {
+    display: none; }
+  #registration .reg-sidebar {
+    float: left;
+    width: 25%; }
+    #registration .reg-sidebar li {
+      list-style-type: none; }
+  #registration .reg-content {
+    float: left;
+    width: 75%; }
+  #registration .restricted {
+    display: none; }
+  #registration input[type=checkbox] {
+    float: left;
+    width: auto;
+    margin-top: 0.5em; }
+  #registration .description {
+    margin-left: 2em; }
+
+.ntnlr-view table {
+  font-size: 12px; }
+.ntnlr-view td {
+  padding-left: .5em;
+  padding-right: .5em; }
+.ntnlr-view .attendee-link {
+  display: block;
+  text-decoration: none;
+  border: none; }
+.ntnlr-view .table-sort thead .sort {
+  cursor: pointer; }
+  .ntnlr-view .table-sort thead .sort:after {
+    font-family: Dashicons;
+    padding-left: .5em;
+    content: "\f156"; }
+  .ntnlr-view .table-sort thead .sort.sorting-asc, .ntnlr-view .table-sort thead .sort.sorting-desc {
+    border-bottom: 3px solid black; }
+  .ntnlr-view .table-sort thead .sort.sorting-desc:after {
+    content: "\f140"; }
+  .ntnlr-view .table-sort thead .sort.sorting-asc:after {
+    content: "\f142"; }
